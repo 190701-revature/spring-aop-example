@@ -5,9 +5,9 @@ spring:
   application:
     name: aop-demo
   datasource:
-    username: jdbc
-    password: p4ssw0rd
-    url: jdbc:postgresql://rev-postgres.cstflnuhd9cf.us-east-1.rds.amazonaws.com:5432/postgres
+    username: ${DB_USER}
+    password: ${DB_PASSWORD}
+    url: ${DB_URL}
   jpa:
     hibernate:
       ddl-auto: update
